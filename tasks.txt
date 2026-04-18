@@ -1,0 +1,3 @@
+Person → Task (Deadline) Format:
+- Unassigned → Checking your browser or considering automatic redirection. No deadline specified.
+- Person A/B/C/... → Telling a sample video story again. Deadline not mentioned in the transcript.

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+openai-whisper
+requests
+numpy
+sounddevice
+pyaudio
+transformers
+torch
