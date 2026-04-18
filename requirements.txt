@@ -7,3 +7,6 @@ sounddevice
 transformers
 torch
 gunicorn
+passlib[bcrypt]
+python-jose
+pyjwt
