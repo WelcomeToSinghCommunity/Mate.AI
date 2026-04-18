@@ -45,7 +45,7 @@ def verify_token(authorization: str = Header(...)):
         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
 # --- Whisper model ---
-model = whisper.load_model("small")
+model = whisper.load_model("tiny")
 
 @app.post("/transcribe")
 async def transcribe_audio(file: UploadFile = File(...)):
