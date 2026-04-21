@@ -45,7 +45,7 @@ def verify_token(authorization: str = Header(...)):
         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
 # --- Whisper model ---
-model = whisper.load_model("small")
+model = whisper.load_model("tiny")
 
 @app.post("/transcribe")
 async def transcribe_audio(file: UploadFile = File(...)):
@@ -81,3 +81,8 @@ def get_summary(user: str = Depends(verify_token)):
 @app.get("/tasks")
 def get_tasks(user: str = Depends(verify_token)):
     return {"tasks": ["Finalize report", "Email client", "Prepare slides"]}
+
+@app.get("/")
+def home():
+    return {"message": "Mate.AI backend is live!"}
+

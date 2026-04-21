@@ -1,12 +1,9 @@
 fastapi
 uvicorn
-openai-whisper
-requests
-numpy
-sounddevice
-transformers
-torch
 gunicorn
 passlib[bcrypt]
 python-jose
 pyjwt
+openai-whisper
+torch
+transformers
